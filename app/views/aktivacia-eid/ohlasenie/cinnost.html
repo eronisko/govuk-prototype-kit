@@ -1,0 +1,44 @@
+{% extends "zalozenie-zivnosti/layout_form.html" %}
+
+{% block mainContent %}
+{% call govukFieldset({
+  legend: {
+    text: "Čo budete robiť?",
+    classes: "govuk-fieldset__legend--xl",
+    isPageHeading: true
+  }
+}) %}
+{{ govukHint({
+  text: 'Popíšte, čím sa budete ako živnostník zaoberať. Treba zadať aspoň jednu činnosť.'
+})}}
+{{ govukDetails({
+  summaryText: "Ako správne pomenovať činnosť živnosti",
+  html: "
+    <h3 class='govuk-heading-m'>Príklady</h3>
+    <ul class='govuk-list govuk-list--bullet'>
+      <li>Počítačové služby a služby súvisiace s počítačovým spracovaním údajov</li>
+      <li>Reklamné a marketingové služby, prieskum trhu a verejnej mienky</li>
+      <li>Dizajnérske činnosti</li>
+    </ul>
+    <p>
+      Môžete využiť aj tento <a href='http://www.minv.sk/?zivnostenske-podnikanie&subor=40259'>zoznam odporúčaných pomenovaní</a> (PDF).
+    </p>
+    "
+}) }}
+
+<form action="zhrnutie" method="post" class="form">
+  {{ govukInput({
+    value: data['activity'],
+    id: "activity",
+    name: "activity"
+  }) }}
+  <p><a href="#" class="govuk-link">Pridať ďalšiu činnosť</a></p>
+  {{ govukButton({
+      text: "Pokračovať",
+      attributes: {
+        type: 'submit'
+      }
+  }) }}
+</form>
+{% endcall %}
+{% endblock %}

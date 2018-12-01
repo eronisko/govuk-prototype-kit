@@ -1,0 +1,54 @@
+{% extends "zalozenie-zivnosti/layout_step_by_step_nav.html" %}
+{% block pageTitle %} Ohláste svoju živnosť {% endblock %}
+
+{% block mainContent %}
+  <h1 class="govuk-heading-xl">
+    Nainštalujte si a spustite potrebné aplikácie
+  </h1>
+
+  <h3 class="govuk-heading-m">
+    Stiahnite si inštalačný balíček
+  </h3>
+
+  <p>
+    Nájdete ho na <a href="https://www.slovensko.sk/sk/na-stiahnutie" target="_blank"> tomto mieste </a>. Po kliknutí na tlačidlo “Zistiť operačný systém” sa Vám zobrazí balíček vhodný pre Váš operačný systém. V prípade, ak niektorú z aplikácií už máte, sú dostupné aj samostatne, po kliknutí na tlačidlo “Jednotlivé aplikácie”. 
+  </p>
+  
+  <h3 class="govuk-heading-m">
+    Nainštalujte si stiahnuté aplikácie
+  </h3>
+
+  <p>
+    Inštalácia prebieha štandardným spôsobom, je nutné odkliknúť súhlas s licenčnými podmienkami a plynulo prejsť cez všetky inštalačné okná.  Ak prebehne inštalácia úspešne, systém Vás na to upozorní. 
+  </p>
+  <p>
+    Následne sa Vám v počítači (napríklad na pracovnej ploche) zobrazia ikony nasledujúcich aplikácií: 
+  </p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>Štart eID</li>
+    <li>eID Certificate Propagator</li>
+    <li>Instalatoraplikacii</li>
+  </ul> 
+
+  <h3 class="govuk-heading-m">
+    Vykonajte prvé spustenie
+  </h3>
+
+  <p>
+   Po úspešnej inštalácií by Vám malo vyskočiť dialógové okno, ktoré Vás požiada o zadanie Vášho kódu BOK. V tomto momente by ste mali mať pripojenú elektronickú čítačku so zasunutým občianskym preukazom s elektronickým čipom v PC prostredníctvom USB portu. Ak je čítačka korektne nastavená, LED kontrolka svieti.
+  </p>
+
+  <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        Tip: Pri inštalácii je potrebné zakliknúť obe elektronické čítačky (Bit4id a Gemalto)
+        </span>
+      </summary>
+    <div class="govuk-details__text">
+    <p>
+    V opačnom prípade inštalácia, resp. autentifikácia cez www.slovensko.sk nefunguje korektne.
+    </p> 
+    </div>
+  </details> 
+
+{% endblock %}

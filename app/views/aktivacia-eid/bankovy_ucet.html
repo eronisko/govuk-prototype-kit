@@ -1,0 +1,39 @@
+{% extends "zalozenie-zivnosti/layout_step_by_step_nav.html" %}
+
+{% block mainContent %}
+  <h1 class="govuk-heading-xl">
+    Osobne si vyžiadajte potrebné certifikáty
+  </h1>
+
+  <p class="govuk-body">
+    Pre vybavenie bezpečnostného osobného kódu, elektronickej čítačky a získanie certifikátov na elektronický podpis je potrebná osobná návšteva Klientskeho centra Ministerstva vnútra alebo oddelenia dokladov Okresného riaditeľstva Policajného zboru.
+  </p>
+  
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+        Tip: Pri osobnej návšteve úradu budete potrebovať nahlásiť tri číselné kódy, ktoré si volíte Vy sami. Odporúčame si ich preto nachystať vopred. 
+        </span>
+      </summary>
+    <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+    <li><b>Bezpečnostný osobný kód (BOK):</b> 6-miestne číslo. Slúži na  prihlasovanie sa do www.slovensko.sk. Pozor, je možné meniť ho len osobnou návštevou na úrade.</li>
+    <li><b>Zaručený elektronický podpis PIN (ZEP PIN):</b> 6-miestne číslo. Môže byť zhodné s BOK, avšak neodporúčame to. Slúži na autentifikáciu pri vytváraní kvalifikovaného elektronického podpisu. Je možné ho meniť na stránke www.slovensko.sk vo svojom účte.</li>
+    <li><b>Zaručený elektronický podpis PUK (ZEP PUK):</b> 8-miestne číslo. Slúži na odblokovanie možnosti podpisovania ZEP PIN-om, v prípade ak ju zablokujete troma nesprávnymi pokusmi.</li>
+    </ul>
+    <p>
+    Pri voľbe hesiel dbajte na dodržiavanie všeobecných bezpečnostných štandardov. Vyhnite sa najmä:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+    <li>Rodným číslam a dátumom narodenia</li>
+    <li>Heslám využívaným v iných službách</li>
+    <li>Príliš jednoduchým číselným reťazcom typu 000000 alebo 123456</li>
+    </ul> 
+    </div>
+  </details> 
+
+  <p>
+    Úradník/Úradníčka nahrá Vami zadefinované kódy do systému a následne Vám dá podpísať tlačivo pod názvom “Potvrdenie o prevzatí certifikátov na eID č. xy”. Zároveň Vám odovzdá čítačku eID, ktorú budete spolu s kódmi potrebovať pri vybavovaní elektronických služieb štátu.
+  </p>  
+
+{% endblock %}
