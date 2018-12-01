@@ -23,9 +23,9 @@ function buildRequestData (request) {
     }
 
     return {
-        'parentServiceName': 'Strata odcudzenie dokladov',
+        'parentServiceName': 'Strata, odcudzenie dokladov',
         'parentServiceUrl': '/strata-odcudzenie',
-        'serviceName': 'Strata odcudzenie dokladov: Občiansky preukaz',
+        'serviceName': 'Strata, odcudzenie dokladov: Občiansky preukaz',
         'serviceUrl': '/strata-odcudzenie/op',
         'navigationSteps': [
             {

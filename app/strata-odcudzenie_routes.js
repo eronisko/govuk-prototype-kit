@@ -13,7 +13,7 @@ function buildRequestData (request) {
     }
 
     return {
-        'serviceName': 'Strata odcudzenie dokladov: krok po kroku',
+        'serviceName': 'Strata, odcudzenie dokladov: krok po kroku',
         'serviceUrl': '/strata-odcudzenie',
         'navigationSteps': [
             {
