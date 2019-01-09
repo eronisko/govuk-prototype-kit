@@ -5,7 +5,21 @@ router.get('/', function (req, res) {
     res.render('strata-odcudzenie/index.html', buildRequestData(req))
 })
 
+router.get('/pas', function (req, res) {
+    res.render('strata-odcudzenie/pas.html', buildRequestData(req))
+})
 
+router.get('/vodicsky_preukaz', function (req, res) {
+    res.render('strata-odcudzenie/vodicsky_preukaz.html', buildRequestData(req))
+})
+
+router.get('/karta_poistenca', function (req, res) {
+    res.render('strata-odcudzenie/karta_poistenca.html', buildRequestData(req))
+})
+
+router.get('/platobna_karta', function (req, res) {
+    res.render('strata-odcudzenie/platobna_karta.html', buildRequestData(req))
+})
 
 function buildRequestData (request) {
     function urlTo (path) {
@@ -19,81 +33,38 @@ function buildRequestData (request) {
             {
                 number: '0',
                 title: 'Úvod',
-                description: 'Blalal lala al OP',
+                description: 'Úvodné informácie k strate dokladov',
                 href: urlTo('/'),
                 isActive: request.path === '/'
             },
             {
-                number: 'O',
+                number: '1',
                 title: 'Občiansky preukaz',
-                description: 'Blalal lala al OP',
+                description: 'Čo robiť keď stratíte občiansky preukaz',
                 href: urlTo('/op'),
                 isActive: request.path === '/op'
             },
             {
-                number: 'P',
+                number: '2',
                 title: 'Cestovný doklad',
-                description: 'bla bvla',
+                description: 'Čo robiť keď stratíte cestovný doklad - pas',
                 href: urlTo('/pas'),
                 isActive: request.path === '/pas'
             },
             {
-                number: 'T',
-                title: 'Osvedčenie o evidencii vozidla',
-                description: 'technický preukaz',
-                href: urlTo('/tp'),
-                isActive: request.path === '/tp'
+                number: '3',
+                title: 'Vodičský preukaz',
+                description: 'Čo robiť keď stratíte vodičský preukaz',
+                href: urlTo('/vodicsky_preukaz'),
+                isActive: request.path === '/vodicsky_preukaz'
             },
             {
-                number: 'K',
-                title: 'Karta poistenca',
-                description: 'Postenca karta',
-                href: urlTo('/karta-poistenca'),
-                isActive: request.path === '/karta-poistenca'
-            },
-            {
-                number: 'C',
-                title: 'Platobná karta',
-                description: 'Platobná karta',
-                href: urlTo('/platobna-karta'),
-                isActive: request.path === '/platobna-karta'
-            },
-            {
-                number: 'R',
-                title: 'Rodný list',
-                description: 'Rodný list',
-                href: urlTo('/rodny-list'),
-                isActive: request.path === '/rodny-list'
-            },
-            {
-                number: 'S',
-                title: 'Sobášny list',
-                description: 'Sobášny list',
-                href: urlTo('/sobasny-list'),
-                isActive: request.path === '/sobasny-list'
-            },
-            {
-                number: 'U',
-                title: 'Úmrtný list',
-                description: 'Úmrtný list',
-                href: urlTo('/umrtny-list'),
-                isActive: request.path === '/sobasny-list'
-            },
-            {
-                number: 'T',
-                title: 'Potvrdenie o trvalom pobyte (cudzinci žijúci na Slovensku)',
-                description: 'Povolenie na pobyt',
-                href: urlTo('/povolenie-na-pobyt'),
-                isActive: request.path === '/povolenie-na-pobyt'
-            },
-            {
-                number: 'T',
-                title:  'Preukaz zahraničného Slováka',
-                description: 'preukaz zahraničného Slováka',
-                href: urlTo('/preukaz-slovaka'),
-                isActive: request.path === '/preukaz-slovaka'
-            },
-
+                number: '4',
+                title: 'Platobná karta a iné',
+                description: 'Čo robiť keď stratíte platobnú kartu ',
+                href: urlTo('/platobna_karta'),
+                isActive: request.path === '/platobna_karta'
+            }
         ]
     }
 

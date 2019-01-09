@@ -29,28 +29,28 @@ function buildRequestData (request) {
         'serviceUrl': '/strata-odcudzenie/op',
         'navigationSteps': [
             {
-                number: '0',
+                number: '1',
                 title: 'Nahlásenie straty',
-                description: 'Blalal lala al OP',
+                description: 'Kde nahlásiť stratu občianskeho preukazu',
                 href: urlTo('/'),
                 isActive: request.path === '/'
             },
             {
-                number: '1',
+                number: '2',
                 title: 'Vybavenie potvrdenia o OP',
-                description: 'Elektronicky OP',
+                description: 'Ako si dať vystaviť dočasný občiansky preukaz',
                 href: urlTo('/docasny'),
                 isActive: request.path === '/docasny'
             },
             {
-                number: '2',
+                number: '3',
                 title: 'Vystavenie nového OP',
                 description: 'Elektronicky OP',
                 href: urlTo('/vystavenie'),
                 isActive: request.path === '/vystavenie'
             },
             {
-                number: 'Z',
+                number: '4',
                 title: 'Poplatky',
                 description: 'Elektronicky OP',
                 href: urlTo('/poplatky'),
