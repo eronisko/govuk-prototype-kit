@@ -1,0 +1,20 @@
+{% extends "narodenie-dietata/layout_step_by_step_nav.html" %}
+
+{% block mainContent %}
+<h1 class="govuk-heading-xl">
+  Prihlásenie dieťaťa k trvalému pobytu v ohlasovni pobytu
+</h1>
+
+<p>
+  Prihlásenie dieťaťa na ohlasovni pobytu <b>nie je nutné vykonávať osobne</b>, pretože príslušný matričný úrad je povinný ohlasovni pobytu nahlásiť narodenie
+  vášho dieťaťa, teda trvalý pobyt jeho matky, ktorý sa zároveň stáva aj jeho trvalým pobytom.
+</p>
+
+{{
+govukButton({
+  text: "Ďalej",
+  href: serviceUrl + "/prispevok-pri-narodeni-stat",
+  classes: "govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"
+})
+}}
+{% endblock %}
