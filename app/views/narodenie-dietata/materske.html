@@ -1,0 +1,35 @@
+{% extends "narodenie-dietata/layout_step_by_step_nav.html" %}
+
+{% block mainContent %}
+<h1 class="govuk-heading-xl">
+  Materské
+</h1>
+
+<p>
+  Podanie žiadosti o materské:
+</p>
+<p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>5 dielne tlačivo Sociálnej poisťovne (nie je voľne dostupné)</li>
+  <li>vydáva ho lekár tehotnej žene (6 až 8 týždňov pred pôrodom) alebo pokiaľ ho žiada iný poistenec tak Sociálna poisťovňa</li>
+  <li>v prípade zamestnanca je potrebné ho mať potvrdené zamestnávateľom</li>
+  <li>odovzdať v pobočke Sociálnej poisťovne, v prípade zamestnanca ho zašle na pobočku zamestnávateľ</li>
+</ul>
+</p>
+
+<h2 class="govuk-heading-l">Súvisiace odkazy</h2>
+<ul class="govuk-list govuk-list--bullet">
+  <li><a href="https://platforma.slovensko.digital/t/ziadost-o-materske-pre-otca-alebo-inu-osobu/2701" class="govuk-link" target="_blank">Žiadosť o materské pre
+    otca (alebo inú osobu)</a> (externý zdroj)
+  </li>
+  <li><a href="https://www.socpoist.sk/materske/1293s" class="govuk-link" target="_blank">Sociálna poisťovňa - Materské</a> (externý zdroj)</li>
+</ul>
+
+{{
+govukButton({
+text: "Ďalej",
+  href: serviceUrl + "/pediater",
+  classes: "govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"
+})
+}}
+{% endblock %}

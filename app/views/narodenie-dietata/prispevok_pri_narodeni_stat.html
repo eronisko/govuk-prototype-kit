@@ -1,0 +1,48 @@
+{% extends "narodenie-dietata/layout_step_by_step_nav.html" %}
+
+{% block mainContent %}
+<h1 class="govuk-heading-xl">
+  Príspevok pri narodení dieťaťa
+</h1>
+
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <div class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    Žiadosť o príspevok je možné podať až keď sa dieťa dožije <b>28 dní</b>
+  </div>
+</div>
+<p>
+  Žiadosť je možné podať <a href="https://portal.employment.gov.sk/eform/prispevokprinarodeni/" class="govuk-link" target="_blank">elektronicky</a>, podpísanú
+  zaručeným elektronickým podpisom <b>matky</b>.
+  Zároveň je však potrebné mať pripravené tieto vyplnené dokumenty ako prílohy:
+<ul class="govuk-list govuk-list--bullet">
+  <li>naskenovaný rodný list</li>
+  <li><a href="https://www.slovensko.sk/_img/CMS4/Potvrdenie_osetrujuceho_lekara_dietata_k_prispevku_pri_narodeni_dietata.pdf" class="govuk-link"
+         target="_blank">potvrdenie ošetrujúceho lekára</a></li>
+  <li><a href="https://www.upsvr.gov.sk/buxus/docs//SSVaR/tlaciva/NOVE_Vyhlasenie_o_bydlisku_k_prispevku_pri_narodeni_dietata.pdf" class="govuk-link"
+         target="_blank">vyhlásenie o bydlisku k príspevku pri narodení dieťaťa</a></li>
+  <li><a href="https://www.upsvr.gov.sk/buxus/docs//SSVaR/tlaciva/NOVE_Cestne_vyhlasenie_k_prispevku_pri_narodeni_dietata.pdf" class="govuk-link"
+         target="_blank">čestné vyhlásenie k žiadosti o príspevok pri narodení dieťaťa</a></li>
+</ul>
+</p>
+<p>
+  Žiadosť je tiež možné podať <b>písomne</b> zaslaním
+  <a href="https://www.slovensko.sk/_img/CMS4/Narodenie/z_o%20prispevok%20pri%20narodeni.pdf"
+     class="govuk-link" target="_blank">vyplnenej žiadosti</a> spolu s prílohami uvedenými vyššie na úrad práce, sociálnych vecí a rodiny príslušný podľa miesta
+  trvalého pobytu oprávnenej osoby.
+</p>
+<h2 class="govuk-heading-l">Súvisiace odkazy</h2>
+<ul class="govuk-list govuk-list--bullet">
+  <li><a href="https://platforma.slovensko.digital/t/poziadanie-o-prispevok-pri-narodeni-dietata/3533" class="govuk-link" target="_blank">Požiadanie o príspevok
+    pri narodení dieťaťa</a> (externý zdroj)
+  </li>
+</ul>
+{{
+govukButton({
+  text: "Ďalej",
+  href: serviceUrl + "/prispevok-pri-narodeni-obec",
+  classes: "govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"
+})
+}}
+{% endblock %}

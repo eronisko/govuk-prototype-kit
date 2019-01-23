@@ -1,0 +1,78 @@
+{% extends "narodenie-dietata/layout_step_by_step_nav.html" %}
+{% block pageTitle %} Ohláste svoju živnosť {% endblock %}
+
+{% block mainContent %}
+<h1 class="govuk-heading-xl">
+  Prihlásenie do zdravotnej poisťovne
+</h1>
+
+<p>
+  Do <b>60 dní</b> od narodenia dieťaťa je nutné prihlásiť dieťa vo vybranej zdravotnej poisťovni, do vypršania tejto lehoty je dieťa poistencom v poisťovni
+  matky (zdravotná starostlivosť je hradená z jej poistenia).
+</p>
+<p>
+  Na prihlásenie dieťaťa do zdravotnej poisťovne je potrebné mať vyplnenú <b>prihlášku poistenca</b>, <b>rodný list</b> dieťaťa a <b>občiansky preukaz</b>
+  rodiča alebo zákonného zástupcu.
+</p>
+
+<p>
+  Zoznam poisťovní:
+  <details class="govuk-details">
+    <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Všeobecná zdravotná poisťovňa (VšZP)
+          </span>
+    </summary>
+    <div class="govuk-details__text">
+      <li>momentálne len <b>osobne</b> na ktorejkoľvek pobočke. Tlačivo je dostupné <a
+              href="https://www.vszp.sk/files/poistenci/tlaciva/prihlaska_poistenca-2019vypl.pdf" class="govuk-link">tu</a>.
+      </li>
+    </div>
+  </details>
+  <details class="govuk-details">
+    <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Dôvera
+          </span>
+    </summary>
+    <div class="govuk-details__text">
+      <ul class="govuk-list govuk-list--bullet">
+        <li><b>osobne</b> na ktorejkoľvek pobočke</li>
+        <li><b>elektronicky</b> vyplnením <a href="https://prihlaska.dovera.sk/" class="govuk-link" target="_blank">online prihlášky</a></li>
+        <li><b>telefonicky</b> na čísle <a href="tel:0850850850">0850 850 850</a></li>
+      </ul>
+    </div>
+  </details>
+  <details class="govuk-details">
+    <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Union
+          </span>
+    </summary>
+    <div class="govuk-details__text">
+      <ul class="govuk-list govuk-list--bullet">
+        <li><b>osobne</b> na ktorejkoľvek pobočke</li>
+        <li><b>elektronicky</b> vyplnením <a href="https://www.union.sk/online-prihlaska-uzp2/#vyber-poistenca" class="govuk-link" target="_blank">online
+          prihlášky</a></li>
+        <li><b>telefonicky</b> na čísle <a href="tel:0850003333">0850 003 333</a></li>
+        <li><b>poštou</b> zaslaním vyplnenej <a href="https://www.union.sk/documents/24509/Prihlaska_UZP" class="govuk-link">prihlášky</a></li>
+      </ul>
+    </div>
+  </details>
+</p>
+
+<h2 class="govuk-heading-l">Súvisiace odkazy</h2>
+<ul class="govuk-list govuk-list--bullet">
+  <li><a href="https://www.vszp.sk/poistenci/tlaciva/prihlaska-poistenca" class="govuk-link" target="_blank">VšZP - Prihláška poistenca</a> (externý zdroj)</li>
+  <li><a href="https://www.dovera.sk/poistenec/prihlaska-a-preukaz-poistenca" class="govuk-link" target="_blank">Dôvera - Prihláška poistenca</a> (externý zdroj)</li>
+  <li><a href="https://www.union.sk/stante-sa-nasim-poistencom" class="govuk-link" target="_blank">Union - Staňte sa naším poistencom</a> (externý zdroj)</li>
+</ul>
+
+{{
+govukButton({
+  text: "Ďalej",
+  href: serviceUrl + "/socialna-poistovna",
+  classes: "govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"
+})
+}}
+{% endblock %}

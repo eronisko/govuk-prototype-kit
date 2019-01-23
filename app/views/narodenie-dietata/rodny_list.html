@@ -1,0 +1,41 @@
+{% extends "narodenie-dietata/layout_step_by_step_nav.html" %}
+
+{% block mainContent %}
+<h1 class="govuk-heading-xl">
+  Vyzdvihnutie rodného listu na matrike
+</h1>
+
+<p>
+  Pri vydávaní rodného listu je potrebné mať k dispozícii:
+</p>
+<p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>1. <b>Hlásenie o narodení dieťaťa</b> (zasiela zdravotnícke zariadenie matrike)</li>
+  <li>2. <b>Vyhlásenie o mene dieťaťa podpísané obomi rodičmi</b> (matka podpisuje v pôrodnici, otec na matrike pri preberaní rodného listu)</li>
+  <li>
+    3. <b>Potrebné doklady</b>
+    <ul>
+      <li><u>dieťa sa narodilo v platnom manželstve</u> - rodný list vyzdvihne otec, predloží <b>sobášny list</b>, <b>platné preukazy totožnosti rodičov</b>
+      </li>
+      <li><u>dieťa sa narodilo slobodnej matke</u> - rodný list vyzdvihne matka, predloží <b>platný preukaz totožnosti</b> a <b>vyhlásenie o osobnom stave</b>;
+        ak ide o slobodnú matku, ktorá chce určiť otcovstvo, vyžaduje sa <b>prítomnosť oboch rodičov</b>, ktorí predložia <b>občianske preukazy</b></li>
+      <li><u>dieťa sa narodilo rozvedenej matke</u> - rodný list vyzdvihne matka, predloží <b>platný preukaz totožnosti</b> a <b>právoplatný rozsudok o
+        rozvode</b> (do 300 dní od právoplatného rozsudku o rozvode manželstva je zo zákona zapísaný do matriky ako otec dieťaťa manžel matky, no po úspešnom
+        zapretí otcovstva na súde matkou alebo otcom dieťaťa môže určiť otcovstvo na matrike biologický otec)
+      </li>
+      <li><u>dieťa sa narodilo vdove</u> - rodný list vyzdvihne matka, predloží <b>platný preukaz totožnosti</b> a <b>úmrtný list manžela</b> (do 300 dní od
+        smrti manžela je zo zákona zapísaný do matriky ako otec dieťaťa zosnulý manžel matky)
+      </li>
+    </ul>
+  </li>
+</ul>
+</p>
+
+{{
+govukButton({
+  text: "Ďalej",
+  href: serviceUrl + "/zdravotna-poistovna",
+  classes: "govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"
+})
+}}
+{% endblock %}
